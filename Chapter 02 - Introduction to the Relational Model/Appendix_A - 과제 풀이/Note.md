@@ -37,7 +37,7 @@ Consider the employee database of Figure 2.17. What are the appropriate **primar
 
 #### <span style= "color: red">Answer</span>
 ***Employee (<u>person_name</u>, street, city)***<br>
-***works (<u>person_name</u>, company_name, salary)***<br>
+***works (<u>person_name</u>, <u>company_name</u>, <u>salary</u>)***<br>
 ***company (<u>company_name</u>, city)***
 
 ### <span style= "color: blue">Problem 2.6</span>
@@ -48,11 +48,11 @@ Consider the employee database of Figure 2.17. Give an expression in the relatio
 
 #### <span style= "color: red">Answer</span>
 a. 
-$$ \Pi_{person\_name}\,(\sigma_{city="Miami"}(employee)) $$
+$$ \Pi_{person\_name}\,(\sigma_{city= "Miami"}(employee)) $$
 b.
 $$ \Pi_{person\_name}\,(\sigma_{salary>100000}(works)) $$
 c.
-$$ \Pi_{person\_name}\,(\sigma_{city="Miami"\wedge \,salary>100000}(employee\bowtie works)) $$
+$$ \Pi_{person\_name}\,(\sigma_{city= "Miami"\wedge \,salary>100000}(employee\bowtie works)) $$
 
 ### <span style= "color: blue">Problem 2.7</span>
 Consider the bank database of Figure 2.18. Give an expression in the relational algebra for each of the following queries: <br>
